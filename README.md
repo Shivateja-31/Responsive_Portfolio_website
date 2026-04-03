@@ -5,6 +5,8 @@ It showcases my work, projects, skills, and journey as a developer passionate ab
 
 
 🖼️ **Screenshots**
+## 🏠 Home Page
+<img width="1902" height="994" alt="Portfolio Home Page" src="/screenshots/portfolio-home.png" />
 
 ## 🚀 Features
 
