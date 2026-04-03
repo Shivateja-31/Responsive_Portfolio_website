@@ -56,7 +56,7 @@ const AboutMe = () => {
             marginBottom: "1rem",
           }}
         >
-          Hi, I’m <strong>Kunj Desai</strong> — an aspiring{" "}
+          Hi, I’m <strong>Shiva</strong> — an aspiring{" "}
           <strong>Artificial Intelligence Engineer</strong> and{" "}
           <strong>Machine Learning enthusiast</strong> who loves turning ideas
           into intelligent systems. I’m deeply fascinated by how data and

@@ -1,31 +1,17 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-// 🖼️ Import Assets
-import photo from '../../public/photo.jpg'
-import githubLogo from '../../public/github.png'
-import linkedinLogo from '../../public/linkedin.png'
-import gmailLogo from '../../public/gmail.png'
-import whatsappLogo from '../../public/whatsapp.png'
-import instagramLogo from '../../public/insta.png'
-import facebookLogo from '../../public/facebook.png'
-
 export default function Home() {
   const professions = [
     'AI Enthusiast',
-    'Machine Learning Engineer',
-    "Deep Learning Expert",
-    'Computer Vision Researcher',
     'Developer',
   ]
 
   const quickLinks = [
-    { img: githubLogo, title: 'GitHub', link: 'https://github.com/kunj2803' },
-    { img: linkedinLogo, title: 'LinkedIn', link: 'https://www.linkedin.com/in/kunj-desai-07717b293/' },
-    { img: gmailLogo, title: 'Email', link: 'kunjd2803@gmail.com' },
-    { img: whatsappLogo, title: 'WhatsApp', link: 'https://wa.me/+918758209508' },
-    { img: instagramLogo, title: 'Instagram', link: 'https://www.instagram.com/kunj_2834/' },
-    { img: facebookLogo, title: 'Facebook', link: 'https://www.facebook.com/kunj.desai.222608' },
+    { img: '/github.png', title: 'GitHub', link: 'https://github.com/shiva' },
+    { img: '/linkedin.png', title: 'LinkedIn', link: 'https://www.linkedin.com/in/shiva/' },
+    { img: '/gmail.png', title: 'Email', link: 'mailto:shiva@example.com' },
+
   ]
 
   return (
@@ -43,6 +29,7 @@ export default function Home() {
         color: '#fff',
       }}
     >
+      {/* Typing Animation CSS */}
       <style>
         {`
           @keyframes typing {
@@ -63,7 +50,7 @@ export default function Home() {
         `}
       </style>
 
-      {/* --- Top Section: Photo + Info --- */}
+      {/* -------------------- TOP SECTION -------------------- */}
       <div
         style={{
           display: 'flex',
@@ -75,7 +62,7 @@ export default function Home() {
           gap: '2rem',
         }}
       >
-        {/* --- Left: Animated Glowing Photo --- */}
+        {/* ----------- Animated Photo ------------ */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
@@ -115,22 +102,22 @@ export default function Home() {
             }}
           >
             <motion.img
-              src={photo}
-              alt="Kunj Desai"
-              initial={{ scale: 0.8, opacity: 0 }}
+              src="/photo2.jpg"
+              alt="Profile"
+              initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 1 }}
               style={{
                 width: '100%',
                 height: '100%',
                 objectFit: 'cover',
-                borderRadius: '50%',
+                borderRadius: '60%',
               }}
             />
           </motion.div>
         </motion.div>
 
-        {/* --- Right: Info Section --- */}
+        {/* ----------- Right Info Section ------------ */}
         <motion.div
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
@@ -157,17 +144,17 @@ export default function Home() {
               animate={{ backgroundPositionX: ['0%', '200%'] }}
               transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
               style={{
-                background: 'linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent))',
+                background:
+                  'linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent))',
                 WebkitBackgroundClip: 'text',
                 color: 'transparent',
                 backgroundSize: '200%',
               }}
             >
-              Kunj Desai
+              Shiva Teja
             </motion.span>
           </h1>
 
-          {/* --- Typing Animated Text --- */}
           <p
             className="typing-effect"
             style={{
@@ -177,10 +164,10 @@ export default function Home() {
               maxWidth: '95%',
             }}
           >
-          Aritificial Intellegence Engineer | Frontend Developer | Tech Explorer
+            Ai Engineer | Data Analyst | Tech Explorer
           </p>
 
-          {/* --- Profession Tags --- */}
+          {/* Profession Tags */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -215,101 +202,48 @@ export default function Home() {
             ))}
           </motion.div>
 
-          {/* --- Info Cards --- */}
+          {/* Quick Links */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1 }}
+            transition={{ delay: 1.2 }}
             style={{
               display: 'flex',
               gap: '1rem',
+              marginTop: '1.6rem',
               flexWrap: 'wrap',
-              marginTop: '1.2rem',
             }}
           >
-            {[ 
-              { label: '📍 Location', value: 'Surat,Gujrat,India' },
-              { label: '💼 Expertise', value: 'AI/ML,Problem solving' },
-              { label: '📧 Contact', value: 'kunjd2803@gmail.com' },
-            ].map((info, i) => (
-              <motion.div
+            {quickLinks.map((info, i) => (
+              <motion.a
                 key={i}
-                whileHover={{ y: -4, scale: 1.05 }}
-                transition={{ type: 'spring', stiffness: 250 }}
+                href={info.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.12 }}
                 style={{
-                  background: 'rgba(255,255,255,0.05)',
-                  borderRadius: '12px',
-                  padding: '12px 18px',
-                  minWidth: '180px',
-                  textAlign: 'center',
-                  boxShadow: '0 0 10px rgba(0,255,200,0.08)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  padding: '10px 16px',
+                  borderRadius: '10px',
+                  border: '1px solid var(--accent)',
+                  textDecoration: 'none',
+                  color: 'white',
+                  background: 'rgba(255,255,255,0.04)',
                 }}
               >
-                <strong style={{ fontSize: '1rem' }}>{info.label}</strong>
-                <p
-                  style={{
-                    fontSize: '0.9rem',
-                    color: 'rgba(255,255,255,0.7)',
-                    marginTop: '4px',
-                  }}
-                >
-                  {info.value}
-                </p>
-              </motion.div>
+                <img
+                  src={info.img}
+                  alt={info.title}
+                  style={{ width: '24px', height: '24px' }}
+                />
+                {info.title}
+              </motion.a>
             ))}
           </motion.div>
         </motion.div>
       </div>
-
-
-      {/* --- Bottom Quick Links --- */}
-      <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.2 }}
-        style={{
-          textAlign: 'center',
-          marginTop: '1.2rem',
-        }}
-      >
-        <h2 style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>Connect</h2>
-        <div
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
-            gap: '22px',
-          }}
-        >
-          {quickLinks.map((item, i) => (
-            <motion.a
-              key={i}
-              href={item.link}
-              title={item.title}
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.15, rotate: 5 }}
-              transition={{ type: 'spring', stiffness: 250 }}
-            >
-              <motion.img
-                src={item.img}
-                alt={item.title}
-                whileHover={{
-                  filter: 'drop-shadow(0 0 15px var(--accent)) brightness(1.2)',
-                }}
-                style={{
-                  width: '50px',
-                  height: '50px',
-                  borderRadius: '50%',
-                  objectFit: 'cover',
-                  filter: 'brightness(0.9)',
-                  transition: 'all 0.3s ease',
-                }}
-              />
-            </motion.a>
-          ))}
-        </div>
-      </motion.div>
     </section>
   )
 }

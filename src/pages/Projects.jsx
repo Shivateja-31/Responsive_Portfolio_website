@@ -4,36 +4,36 @@ import { Github, ExternalLink } from 'lucide-react'
 
 const PROJECTS = [
   {
-    title: '🩺 Mammogram Malignancy Detector',
-    desc: 'Hybrid CNN + YOLOv8 ensemble for full-image breast cancer detection with ROI preprocessing and sliding-window inference.',
-    ss: '/mamo.png',
-    tech: ['TensorFlow', 'Keras', 'OpenCV', 'YOLOv8'],
+    title: '🩺 Build An Agentic Rag Pipeline',
+    desc: 'Build an Agentic RAG pipeline using Python and LangChain..',
+    ss: 'public/Agentic_rag.jpg',
+    tech: ['TensorFlow', 'Python','LangChain'],
     live: '#',
-    code: 'https://github.com/kunjdesai/mammo-detector'
+    code: 'https://github.com/shiva/mammo-detector'
   },
   {
-  title: '🧠 Mental Health Analyzer',
-  desc: 'NLP-based system that analyzes user text to detect signs of anxiety, stress, and depression using sentiment analysis and transformer models.',
+  title: '🧠 CNN Visualizer',
+  desc: 'An interactive deep learning platform built with React & TypeScript. Classify images with AI, explore CNN architectures visually, learn neural network concepts, and simulate model training.',
   ss: '/mentalhealth.jpg',
   tech: ['Python', 'Transformers', 'NLTK', 'scikit-learn'],
-  live: 'https://mental-health-analyzer.streamlit.app/',
-  code: 'https://github.com/kunj2803/Mental-Health-Analyzer'
+  live: 'https://cnn-visualizer-ten.vercel.app/classifier',
+  code: 'https://github.com/shiva/Mental-Health-Analyzer'
   },
   {
-    title: '🤖 Indian Sign Language Interpreter',
+    title: 'Secure-text-Guardian',
     desc: 'Real-time gesture recognition and translation using Mediapipe + TensorFlow, enabling live sign-to-text interpretation.',
-    ss: '/ISL.png',
-    tech: ['Mediapipe', 'TensorFlow', 'React', 'Flask'],
-    live: '#',
-    code: 'https://github.com/kunjdesai/ISL-Interpreter'
+    ss: 'public/cyber.jpg',
+    tech: ['TypeScript', 'Vite', 'React', 'TailwindCss'],
+    live: 'https://secure-text-guardian.vercel.app/',
+    code: 'https://github.com/Shivateja-31/secure-text-guardian.git'
   },
   {
-  title: '💼 Portfolio Website',
-  desc: 'A modern and responsive portfolio built with React and Framer Motion, showcasing projects, skills, and achievements with smooth animations and interactive UI.',
-  ss: '/portfolio.jpg',
-  tech: ['React', 'Framer Motion', 'Tailwind CSS'],
-  live: '#',
-  code: 'https://github.com/kunj2803/Kunj-Portfolio'
+  title: '💼Design a Url-Shortner',
+  desc: 'A URL shortener that converts long web addresses into compact, shareable links for easier distribution and tracking.',
+  ss: 'public/url.jpg',
+  tech: ['Python', 'Html', 'Tailwind CSS','NanoId','Express js & Node js'],
+  live: 'https://url-shortner-ochre-one-65.vercel.app/',
+  code: 'https://github.com/Shivateja-31/Url_Shortner.git'
   },
   {
     title: '💬 DocuChat – Gemini AI Chatbot',
@@ -41,7 +41,7 @@ const PROJECTS = [
     ss: '/Docuchat.png',
     tech: ['Gemini API', 'LangChain', 'Python', 'Streamlit'],
     live: 'https://docuchat-chatbot.streamlit.app/',
-    code: 'https://github.com/kunj2803/Docuchat-Chatbot'
+    code: 'https://github.com/shiva/Docuchat-Chatbot'
   },
   {
     title: '📊 ProfileX – Data Profiler',
@@ -49,7 +49,7 @@ const PROJECTS = [
     ss: '/ProfileX.png',
     tech: ['Streamlit', 'Pandas', 'Plotly'],
     live: 'https://profilex.streamlit.app/',
-    code: 'https://github.com/kunjdesai/ProfileX'
+    code: 'https://github.com/shiva/ProfileX'
   },
   {
     title: '🧬 Breast Cancer Prediction',
@@ -57,7 +57,7 @@ const PROJECTS = [
     ss: '/breastpred.jpg',
     tech: ['scikit-learn', 'XGBoost', 'Pandas'],
     live: '#',
-    code: 'https://github.com/kunjdesai/BreastCancerPrediction'
+    code: 'https://github.com/shiva/BreastCancerPrediction'
   }
 ]
 

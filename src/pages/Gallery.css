@@ -1,7 +1,6 @@
 .gallery-container {
   background: #0b0b0b; /* Aesthetic black theme */
-  min-height: 100vh;
-  padding: 40px 20px;
+  padding: 20px 10px;
   color: #f0f0f0;
   display: flex;
   flex-direction: column;
