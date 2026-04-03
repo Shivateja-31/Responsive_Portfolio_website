@@ -2,7 +2,7 @@
 Welcome to my personal portfolio website built with **React.js**, **Framer Motion**, and **modern UI design** principles.
 It showcases my work, projects, skills, and journey as a developer passionate about **AI, ML, and Web Technologies**.
 
-🌐 **Website:** [[Shiva-Portfolio]](https://kunj-desai.netlify.app/)
+
 
 🖼️ **Screenshots**
 <img width="1902" height="994" alt="Screenshot 2025-11-03 232447" src="https://github.com/user-attachments/assets/6f78ceb0-363c-41e8-9eb9-a26fa814e8ac" />
@@ -60,8 +60,8 @@ Now open [http://localhost:3000](http://localhost:3000) in your browser 🚀
 
 If you’d like to collaborate or just say hi 👋, feel free to reach out!
 
-* 📧 **Email:** [shiva@example.com](mailto:shiva@example.com)
-* 💼 **LinkedIn:** [linkedin.com/in/shiva](https://www.linkedin.com/in/shiva/)
+* 📧 **Email:** kondetishivateja77@gmail.com)
+* 💼 **LinkedIn:** [https://www.linkedin.com/in/shivateja-kondeti-00a148308/])
 
 ---
 
